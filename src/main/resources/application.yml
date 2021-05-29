@@ -1,4 +1,6 @@
 server:
-  port: 8080
   servlet:
     contextPath: /v1
+spring:
+  profiles:
+    active: @activatedProperties@
