@@ -35,12 +35,12 @@ Here is a step by step how to run this project:
     ```
 
 ### **Remote debug on Intellij IDEA**
-Intellij IDEA provides a great tool to remote debugging your project, so the following code was added in the Dockerfile entrypoint:
+In case you're running the application within Docker, Intellij IDEA provides a tool to remote debugging your project, that's why the following code was added in the Dockerfile entrypoint:
 ```dockerfile
 ENTRYPOINT ["java", "-Xdebug", "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:5005", "-jar", "/movies-api.jar"]
 ```
 
-This allows us to specify that on running, the program will provide at the `5005` port a way to connect a remote debug.
+This allows us to specify that on runtime, the program will provide at the `5005` port a way to connect a remote debug.
 The first log line will be `Listening for transport dt_socket at address: 5005`.
 
 Then a little change has to be made on the docker command to run the image specifying either the new port:
@@ -60,7 +60,7 @@ Now lets set up the Intellij to run the remote debug that will connect on the re
 Run this configuration on debug mode, and you're ready to go.
 
 ### **Live reload with Spring Devtools**
-Spring Devtools is a great tool to avoid the process of repackaging and reexecuting the docker build/run every time you make any changes to the source code.
+Spring Devtools provides a way to avoid the process of repackaging and reexecuting the docker build/run every time you make any changes to the source code.
 
 To be able to do this, some config were added to the [pom file](pom.xml):
 * First the Spring Devtools dependency was added:
