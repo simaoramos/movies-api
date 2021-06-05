@@ -5,13 +5,14 @@ This is a Maven and Spring Boot API I created as a POC including some design pat
 Here are some features or tools used on this project:
 * Maven profiles;
 * Dockerfile;
+* Hexagonal architecture;
+* Error handling (ControllerAdvice);
 * Spring Devtools;
 * H2 in memory database.
 
 TODO:
-* Clean architecture;
-* Add PostgreSQL database;
-* Error handling (ControllerAdvice);
+* PostgreSQL database;
+* Unit tests;
 * Mulitenancy;
 * Oauth2;
 * OpenAPI (Swagger);

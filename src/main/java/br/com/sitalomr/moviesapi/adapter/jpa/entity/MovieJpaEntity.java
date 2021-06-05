@@ -1,6 +1,5 @@
-package br.com.sitalomr.moviesapi.movie.entity;
+package br.com.sitalomr.moviesapi.adapter.jpa.entity;
 
-import br.com.sitalomr.moviesapi.genre.entity.Genre;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -17,9 +16,9 @@ import java.util.List;
 
 @Entity(name = "movies")
 @Data
-public class Movie {
+public class MovieJpaEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "original_title")
@@ -40,5 +39,5 @@ public class Movie {
     @JoinTable(name = "movie_genres",
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "genre_id"))
-    private List<Genre> genres;
+    private List<GenreJpaEntity> genreJpaEntities;
 }

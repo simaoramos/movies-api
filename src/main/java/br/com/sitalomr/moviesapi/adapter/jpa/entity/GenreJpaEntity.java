@@ -1,4 +1,4 @@
-package br.com.sitalomr.moviesapi.genre.entity;
+package br.com.sitalomr.moviesapi.adapter.jpa.entity;
 
 import lombok.Data;
 
@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 
 @Entity(name = "genres")
 @Data
-public class Genre {
+public class GenreJpaEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
