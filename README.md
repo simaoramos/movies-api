@@ -7,6 +7,7 @@ Here are some features or tools used on this project:
 * Dockerfile;
 * Hexagonal architecture;
 * Error handling (ControllerAdvice);
+  * Use of [exception-core lib](https://github.com/simaoramos/exception-core)
 * Spring Devtools;
 * H2 in memory database.
 
