@@ -21,6 +21,7 @@
         <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
         <lombok.version>1.18.20</lombok.version>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <exception-core.version>1.0-SNAPSHOT</exception-core.version>
     </properties>
 
     <profiles>
@@ -104,6 +105,13 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <!-- Exception Core -->
+        <dependency>
+            <groupId>br.com.simaoramos</groupId>
+            <artifactId>exception-core</artifactId>
+            <version>${exception-core.version}</version>
         </dependency>
     </dependencies>
 
