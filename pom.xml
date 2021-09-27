@@ -107,17 +107,18 @@
             </exclusions>
         </dependency>
 
-        <dependency>
-            <groupId>br.com.simaoramos</groupId>
-            <artifactId>web-exception-handling-spring-boot-starter</artifactId>
-            <version>${web-exception-handling-starter.version}</version>
-        </dependency>
-
         <!-- Exception Core -->
         <dependency>
             <groupId>br.com.simaoramos</groupId>
             <artifactId>exception-core</artifactId>
             <version>${exception-core.version}</version>
+        </dependency>
+
+        <!-- Exception Handling Starter -->
+        <dependency>
+            <groupId>br.com.simaoramos</groupId>
+            <artifactId>web-exception-handling-spring-boot-starter</artifactId>
+            <version>${web-exception-handling-starter.version}</version>
         </dependency>
     </dependencies>
 
