@@ -12,7 +12,7 @@
 
     <groupId>br.com.sitalomr</groupId>
     <artifactId>movies-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
     <name>movies-api</name>
     <description>POC project using Spring Boot</description>
 
